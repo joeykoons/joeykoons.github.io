@@ -1,0 +1,52 @@
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.six-sec-ease-in-out {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -ms-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+}
+
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+}
+
+/* Color pallette = 
+    Original
+        primary yellow  rgba(244,219,12,1.0);
+        dark yellow     rgba(207,171,0,1.0);
+        light yellow    rgba(251,234,150,1.0);
+    Google Recommended
+        primary         rgba(255,235,59,1.0);
+        dark            rgba(251,192,45,1.0);
+        light           rgba(255,249,196,1.0);
+        secondary       rgba(25,118,210,1.0);
+        primary text    rgba(33,33,33,1.0);
+        secondary text  rgba(114,114,114,1.0);  
+        dividers        rgba(182,182,182,1.0);
+
+/* Material Design Shadow Levels = 
+
+    level one       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    level two       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    level three     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    level four      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    level five      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);

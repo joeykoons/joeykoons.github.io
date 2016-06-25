@@ -35,7 +35,10 @@
     <style>
     * {
           border-radius: 2px 2px 2px 2px !important;
-        }        
+        }
+    .media-hover:hover{
+        background-color: rgb(247,247,247);
+        }
     </style>
       
       <!--Google Fonts-->
@@ -89,34 +92,35 @@
                 </div>
             </div>
       </div>
-      <div class="container-fluid" style="background: #FFD54F; top: 80vh; position: relative; z-index: 200; min-height: 50vh;">
+      <div class="container-fixed" style="background: white; top: 80vh; position: relative; z-index: 200; min-height: 50vh;">
           <div class="row" id="about" style= "margin-top:5vh;">
                 <div class="col-md-6 col-md-offset-3" style="color: rgb(247,247,247);">
-                    <h2 style="text-align: center;">Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.<br><br>-Joey Koons</h2>
+                    <h2 style="text-align: center; color:#FFD54F;">Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.<br><br>-Joey Koons</h2>
                 </div>
             </div>
       </div>
-      <div class="container-fluid" style="background: white; min-height: 600px; top: 80vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="resume">
+      <div class="container-fluid" style="background: rgb(247,247,247); min-height: 600px; top: 80vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="resume">
           <div class="row">
               <div class="col-md-10 col-md-offset-1">
-                  <h2 style="text-align: left;">Resume</h2>
+                  <h2 style="text-align: left; color:#FFD54F;">Resume</h2>
               </div>
           </div>
           <div class="row">
-                    <div class="col-md-5 col-md-offset-1 panel panel-default" style="background-color: rgb(247,247,247); border: solid 0px; margin-right: 10px;">
-                    <div class="panel-body">
-                        <h3 style="text-align:left;">Education</h3>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </a>
+              <div class="col-md-5 col-md-offset-1">
+                  <div class="panel panel-default" style="background-color: white; border: solid 0px;">
+                      <div class="panel-body">
+                          <h3 style="text-align:left;">Education</h3>
+                          <div class="media-hover" style="padding: 5px;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          <div class="media">
+                              <div class="media-left">
+                                <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading" style="text-align: left;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">B.S. Business Management</h4>
+                                <h4 class="media-heading" style="text-align: left;" >B.S. Business Management</h4>
                                 <p>Brigham Young University</p>
                                 <p class="collapse" id="collapseExample">described more here.</p>
                             </div>
+                        </div>
                         </div>
                         <div class="media">
                             <div class="media-left">
@@ -129,78 +133,11 @@
                                 <p>Brigham Young University</p>
                             </div>
                         </div>
-                        <h3 style="text-align:left;">Experience</h3>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="text-align: left;">Digital Marketing Specialist</h4>
-                                <p>Belden Inc.</p>
-                            </div>
                         </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="text-align: left;">Digital Marketing Intern</h4>
-                                <p>Belden Inc.</p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="text-align: left;">Social Media Account Manager</h4>
-                                <p>TMR Media</p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="text-align: left;">Analyst</h4>
-                                <p>NUVI Social Media Analytics</p>
-                            </div>
-                        </div>
-                    </div>
               </div>
-              <div class="col-md-5 panel panel-default" style="background-color: rgb(247,247,247); border: solid 0px; margin-left: 10px;">
+            <div class="panel panel-default" style="background-color: white; border: solid 0px;">
                     <div class="panel-body">
                         <div class="media">
-                            <h3 style="text-align:left;">Volunteering</h3>
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </a>
-                            </div>                            
-                            <div class="media-body">
-                                <h4 class="media-heading" style="text-align: left;">Outreach Director</h4>
-                                <p>The Student Review</p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading" style="text-align: left;">Media Account Member</h4>
-                                <p>The BYU Adlab</p>
-                            </div>
-                        </div>
                         <h3 style="text-align:left;">Certifications</h3>
                         <div class="media">
                             <div class="media-left">
@@ -249,11 +186,91 @@
                     </div>
                 </div>
             </div>
+              </div>
+              <div class="col-md-5">
+                  <div class="panel panel-default" style="background-color: white; border: solid 0px;">
+                    <div class="panel-body">
+                        <h3 style="text-align:left;">Experience</h3>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading" style="text-align: left;">Digital Marketing Specialist</h4>
+                                <p>Belden Inc.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading" style="text-align: left;">Digital Marketing Intern</h4>
+                                <p>Belden Inc.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading" style="text-align: left;">Social Media Account Manager</h4>
+                                <p>TMR Media</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading" style="text-align: left;">Analyst</h4>
+                                <p>NUVI Social Media Analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                  <div class="panel panel-default" style="background-color: white; border: solid 0px;">
+                    <div class="panel-body">
+                        <div class="media">
+                            <h3 style="text-align:left;">Volunteering</h3>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                </a>
+                            </div>                            
+                            <div class="media-body">
+                                <h4 class="media-heading" style="text-align: left;">Outreach Director</h4>
+                                <p>The Student Review</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading" style="text-align: left;">Media Account Member</h4>
+                                <p>The BYU Adlab</p>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
             </div>
+          </div>
+      </div>
             <div class="container-fluid" style="background: rgb(247,247,247); min-height: 600px; top: 80vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="portfolio">
                 <div class="row">
               <div class="col-md-10 col-md-offset-1">
-                  <h2 style="text-align: left;">Portfolio</h2>
+                  <h2 style="text-align: left; color:#FFD54F;">Portfolio</h2>
               </div>
           </div>
           <div class="row">

@@ -36,13 +36,18 @@
     * {
           border-radius: 2px 2px 2px 2px !important;
         }
-    .panel:hover{
-        background-color: #EEEEEE;
-         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        }
-    .panel:not(:hover){
-        background-color: #EEEEEE;
+    .panel{
+        background-color: #FAFAFA;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+        }
+    .panel:hover{
+        background-color: white;
+         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
     .panel:hover .plus{
         font-weight: bold;
@@ -60,23 +65,32 @@
         text-decoration: underline;
         opacity: 1.0;
         }
+    .thumbnail{
+        background-color: #FAFAFA;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+        }
     .thumbnail:hover{
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         background-color: white;
         }
-    .thumbnail:not(:hover){
+    .progress{
         background-color: #FAFAFA;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
         }
     .progress:hover{
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         background-color: white;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
-    .progress:not(:hover){
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        background-color: #FAFAFA;
-        }
-    
     @media (max-width: 767px){
         .panel{
             margin-right: 15px;
@@ -136,7 +150,7 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-        <div class="container-fixed" style=" position: fixed; max-height: 80vh; width: 100vw; z-index: 100; background: rgb(247,247,247);">
+        <div class="container-fixed" style=" position: fixed; max-height: 80vh; width: 100vw; z-index: 100; background: #FAFAFA;">
             <div class="row">
                 <div id="home" class="col-md-8 col-md-offset-2 col-xs-12">
                     <div style="min-height: 50vh;">
@@ -150,14 +164,14 @@
                 </div>
             </div>
         </div>
-        <div class="container-fixed" style="background: #FFD54F; top: 75vh; position: relative; z-index: 200; min-height: 50vh;">
+        <div class="container-fixed" style="background: #F5F5F5; top: 75vh; position: relative; z-index: 200; min-height: 50vh;">
             <div class="row" id="about" style= "margin-top:5vh;">
-                <div class="col-md-6 col-md-offset-3" style="color: rgb(247,247,247);">
-                    <h2 style="text-align: center; color: white; padding: 10vh 0vh 10vh 0vh;">Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.<br><br>-Joey Koons</h2>
+                <div class="col-md-6 col-md-offset-3">
+                    <h2 style="text-align: center; color: #FFD54F; padding: 10vh 0vh 10vh 0vh;">Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.<br><br>-Joey Koons</h2>
                 </div>
             </div>
         </div>
-        <div class="container-fixed" style="background: white; min-height: 600px; top: 75vh; position: relative; z-index: 200; color: rgba(114,114,114,1.0);" id="resume">
+        <div class="container-fixed" style="margin: -1px 0px -1px 0px; background: #EEEEEE; min-height: 600px; top: 75vh; position: relative; z-index: 200; color: rgba(114,114,114,1.0);" id="resume">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1">
                     <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Resume</h2>
@@ -317,7 +331,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fixed" style="background: #EEEEEE; min-height: 600px; top: 75vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="portfolio">
+        <div class="container-fixed" style="margin: -1px 0px -1px 0px; background: #EEEEEE; min-height: 600px; top: 75vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="portfolio">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1">
                     <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Portfolio</h2>
@@ -365,7 +379,7 @@
                 </div>      
             </div>
         </div>
-        <div class="container-fixed" style="background: white; min-height: 600px; top: 75vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="skills">            
+        <div class="container-fixed" style="margin: -1px 0px -1px 0px; background: #EEEEEE; min-height: 600px; top: 75vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="skills">            
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1">
                     <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Skills</h2>
@@ -411,10 +425,11 @@
                 </div>
             </div>
         </div>
-        <div class="container-fixed" style="background: rgb(247,247,247); min-height: 600px; top: 50vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="connect">
+        <div class="container-fixed" style="background: #EEEEEE; min-height: 600px; top: 50vh; position: relative; z-index: 200; color: color: rgba(114,114,114,1.0);" id="connect">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1">
-                    <h2 style="text-align: left;">Connect</h2>
+                    <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Connect</h2>
+                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px; padding-bottom: 10vh;">
                 </div>
             </div>
             <div style="min-height: 20vh;">

@@ -180,12 +180,14 @@
         </div>
         <div class="container-fixed" style="background: #F5F5F5; top: 75vh; position: relative; z-index: 200; min-height: 50vh;">
             <div class="row" id="about" style= "margin-top:5vh;">
-                <div class="col-md-6 col-md-offset-3">
-                    <h2 style="text-align: center; color: #FFD54F; padding: 10vh 0vh 10vh 0vh;">Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.<br><br>-Joey Koons</h2>
+                <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                    <h2 style="padding-top: 10vh;">"Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum."</h2>
+                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px;">
+                    <h2 style="color: #FFD54F; padding-bottom: 10vh;">Joey Koons</h2>
                 </div>
             </div>
         </div>
-        <div class="container-fixed" style="margin: -1px 0px -1px 0px; background: #F5F5F5; min-height: 600px; top: 75vh; position: relative; z-index: 200; color: rgba(114,114,114,1.0);" id="resume">
+        <div class="container-fixed" style="background: #F5F5F5; top: 75vh; position: relative; z-index: 200; min-height: 50vh;">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1">
                     <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Resume</h2>
@@ -193,153 +195,178 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="panel panel-default" style="border: solid 0px; cursor: pointer;">
-                        <div class="panel-body" type="button" data-toggle="collapse" data-target=".collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            <h3>Education</h3>
-                            <div class="media">
-                                <div class="media-left">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <div class="panel-heading" style="border: solid 0px; background-color: gray;">
+                                    <h4 class="panel-title">
+                                        Experience
+                                    </h4>
                                 </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading" style="text-align: left;" >B.S. Business Management</h4>
-                                    <p>Brigham Young University</p>
-                                    <p class="collapse collapseExample">described more here.</p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading" style="text-align: left;">Minor Digital Humanities</h4>
-                                    <p>Brigham Young University</p>
-                                    <p class="collapse collapseExample">Unique description here.</p>
-                                </div>
-                            </div>
-                            <h2 class="plus" style="float: right; color: #FFD54F; padding-right: 15px;">+</h2>
-                        </div>
-                    </div>
-                    <div class="panel panel-default" style="border: solid 0px; cursor: pointer;">
-                        <div class="panel-body" type="button" data-toggle="collapse" data-target=".collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                            <div class="media">
-                                <h3 style="text-align:left;">Certifications</h3>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                            </a>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Digital Marketing Specialist | Belden Inc. |  May 2015 - Present</h4>
+                                            <p>My squishy.</p>
+                                        </div>
                                     </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading" style="text-align: left;">Inbound Certification</h4>
-                                        <p>HubSpot</p>
-                                        <p class="collapse collapseExample1">Something silly.</p>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Digital Marketing Intern</h4>
+                                            <p>Belden Inc.</p>
+                                            <p>My fluffy.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Social Media Account Manager</h4>
+                                            <p>TMR Media</p>
+                                            <p>My crusty.</p>
+                                        </div>
                                     </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading" style="text-align: left;">Adwords Certification</h4>
-                                        <p>Google</p>
-                                        <p class="collapse collapseExample1">Something else silly.</p>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading" style="text-align: left;">Volunteer Full-time Missionary</h4>
-                                        <p>The Church of Jesus Christ of Latter-day Saints</p>
-                                        <p class="collapse collapseExample1">Another silly.</p>
+                                    <div class="media">
+                                        <div class="media-left">
+                                           <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Analyst</h4>
+                                            <p>NUVI Social Media Analytics</p>
+                                            <p>My crunchy.</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading" style="text-align: left;">Team Captain</h4>
-                                        <p>BYU Intramural Athletics</p>
-                                        <p class="collapse collapseExample1">A final silly.</p>
-                                    </div>
-                                </div>
-                                <h2 class="plus" style="float: right; color: #FFD54F; padding-right: 15px;">+</h2>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="panel panel-default" style="border: solid 0px; cursor: pointer;">
-                        <div class="panel-body" type="button" data-toggle="collapse" data-target=".collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                            <h3 style="text-align:left;">Experience</h3>
-                            <div class="media">
-                                <div class="media-left">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading" style="text-align: left;">Digital Marketing Specialist</h4>
-                                    <p>Belden Inc.</p>
-                                    <p class="collapse collapseExample2">My squishy.</p>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        Education
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">B.S. Business Management</h4>
+                                            <p>Brigham Young University</p>
+                                            <p>described more here.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Minor Digital Humanities</h4>
+                                            <p>Brigham Young University</p>
+                                            <p>Unique description here.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="media">
-                                <div class="media-left">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading" style="text-align: left;">Digital Marketing Intern</h4>
-                                    <p>Belden Inc.</p>
-                                    <p class="collapse collapseExample2">My fluffy.</p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading" style="text-align: left;">Social Media Account Manager</h4>
-                                    <p>TMR Media</p>
-                                    <p class="collapse collapseExample2">My crusty.</p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left">
-                                   <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading" style="text-align: left;">Analyst</h4>
-                                    <p>NUVI Social Media Analytics</p>
-                                    <p class="collapse collapseExample2">My crunchy.</p>
-                                </div>
-                            </div>
-                            <h2 class="plus" style="float: right; color: #FFD54F; padding-right: 15px;">+</h2>
                         </div>
-                    </div>
-                    <div class="panel panel-default" style="border: solid 0px; cursor: pointer;">
-                        <div class="panel-body" type="button" data-toggle="collapse" data-target=".collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                            <div class="media">
-                                <h3 style="text-align:left;">Volunteering</h3>
-                                <div class="media-left">
-                                    <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </div>                            
-                                <div class="media-body">
-                                    <h4 class="media-heading" style="text-align: left;">Outreach Director</h4>
-                                    <p>The Student Review</p>
-                                    <p class="collapse collapseExample3">Hey Hey.</p>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        Certifications
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Inbound Certification</h4>
+                                            <p>HubSpot</p>
+                                            <p>Something silly.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Adwords Certification</h4>
+                                            <p>Google</p>
+                                            <p>Something else silly.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Volunteer Full-time Missionary</h4>
+                                            <p>The Church of Jesus Christ of Latter-day Saints</p>
+                                            <p>Another silly.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Team Captain</h4>
+                                            <p>BYU Intramural Athletics</p>
+                                            <p>A final silly.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="media">
-                                <div class="media-left">
-                                   <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading" style="text-align: left;">Media Account Member</h4>
-                                    <p>The BYU Adlab</p>
-                                    <p class="collapse collapseExample3">You you.</p>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                        Service
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>                            
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Outreach Director</h4>
+                                            <p>The Student Review</p>
+                                            <p>Hey Hey.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                           <img class="media-object" src="images/google%20media%20object%20filler.jpg" alt="later">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" style="text-align: left;">Media Account Member</h4>
+                                            <p>The BYU Adlab</p>
+                                            <p>You you.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <h2 class="plus" style="float: right; color: #FFD54F; padding-right: 15px;">+</h2>
                         </div>
                     </div>
                 </div>
@@ -465,6 +492,17 @@
     <script src="../javascripts/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../javascripts/ie10-viewport-bug-workaround.js"></script>
+    <!--Accordion JavaScript-->
+        <script>
+            $('.closeall').click(function(){
+                $('.panel-collapse.in')
+                .collapse('hide');
+            });
+            $('.openall').click(function(){
+                $('.panel-collapse:not(".in")')
+                .collapse('show');
+            });
+        </script>
 </body>
 </html>
 

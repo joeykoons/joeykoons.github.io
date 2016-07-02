@@ -143,7 +143,9 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         padding: auto 10px auto 10px;
         }
-    
+    .portfolio-cards{
+            padding: 0px;
+            }
     @media (max-width: 767px){
         .panel{
             margin-right: 15px;
@@ -158,6 +160,9 @@
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
             border: solid 0px;
             background-color: #FFD54F;
+            }
+        .media-left{
+            display: none;
             }
         }
     </style>
@@ -212,36 +217,34 @@
         </nav>
         <div class="container-fluid" style="background: #FAFAFA;">
             <div class="row">
-                <div id="home" class="col-md-8 col-md-offset-2 col-xs-12">
-                    <div style="min-height: 50vh;">
-                        <h1 style="display: none;">Joey Koons</h1>
-                        <h2 style="margin-top: 20vh; text-align: center;">Nice  to meet you. I'm</h2>
-                        <div class="row" style="margin: 0px auto 0px auto;">
-                            <img class="center-block" style="max-width:90vw;" src="images/joey-diamond-logo.svg" alt="Joey Koons">
-                        </div>
-                        <h2 style="margin-bottom: 10vh; text-align: center;">I'm a digital marketer.</h2>
+                <div id="home" class="col-md-8 col-md-offset-2 col-xs-12" style="min-height: 50vh;">
+                    <h1 style="display: none;">Joey Koons</h1>
+                    <h2 style="margin-top: 20vh; margin-bottom: 5vh; text-align: center;">Nice  to meet you. I'm</h2>
+                    <div class="row" style="margin: 0px auto 0px auto;">
+                        <img class="center-block" style="max-width:90vw;" src="images/joey-diamond-logo.svg" alt="Joey Koons">
                     </div>
+                    <h2 style="margin-top: 5vh; margin-bottom: 10vh; text-align: center;">I'm a digital marketer.</h2>
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background: #F5F5F5; min-height: 50vh;">
-            <div class="row" id="about" style= "margin-top:5vh;">
-                <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-                    <h2 style="padding-top: 10vh;">"Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum."</h2>
+        <div class="container-fluid" style="background: #F5F5F5;">
+            <div class="row" id="about" style="margin-top: 10vh;">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <h2>"Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum."</h2>
                     <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px;">
-                    <h2 style="color: #FFD54F; padding-bottom: 10vh;">Joey Koons</h2>
+                    <h3 style="color: #FFD54F; padding-bottom: 10vh;">Joey Koons</h3>
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background: #F5F5F5; min-height: 50vh;">
+        <div class="container-fluid" style="background: #F5F5F5;">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Resume</h2>
-                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px; padding-bottom: 10vh;">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <h2 style="text-align: left;">Resume</h2>
+                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px;">
                 </div>
             </div>
             <div class="row" style="margin-bottom: 15px;">
-                <div class="col-xs-10 col-xs-offset-1">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <ul class="nav nav-pills red">
                         <li class="active">
                             <a href="#A" data-toggle="tab">
@@ -272,7 +275,7 @@
             </div>
             <!-- Tab panes -->
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="A">
                             <div class="media">
@@ -403,15 +406,15 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background: #F5F5F5; min-height: 600px; color: rgba(114,114,114,1.0);" id="portfolio">
+        <div class="container-fluid" style="background: #F5F5F5; color: rgba(114,114,114,1.0);" id="portfolio">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                     <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Portfolio</h2>
-                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px; padding-bottom: 10vh;">
+                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px;">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-sm-10 col-sm-offset-1 portfolio-cards">
                     <div class="col-sm-4">
                         <a href="#" style="text-decoration: none;">
                             <div class="thumbnail" style="border: solid 0px; padding: 0px;">
@@ -451,18 +454,18 @@
                 </div>      
             </div>
         </div>
-        <div class="container-fluid" style="background: #F5F5F5; min-height: 600px; color: rgba(114,114,114,1.0);" id="skills">         
+        <div class="container-fluid" style="background: #F5F5F5; color: rgba(114,114,114,1.0);" id="skills">         
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Skills</h2>
-                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px; padding-bottom: 10vh;">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh; margin-top: 0px;">Skills</h2>
+                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px;">
                 </div>
             </div>
             
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <div class="panel-group" id="accordion">
-                        <div class="panel panel-default" style="border: solid 0px; margin-bottom: 15px;">
+                        <div class="panel panel-default" style="border: solid 0px; margin: 0px 0px 15px 0px;">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" style="text-decoration: none;">
                                 <div class="panel-heading" style="border: solid 0px; background-color: #00BFA5;">
                                     <h4 class="panel-title">
@@ -500,7 +503,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default" style="border: solid 0px; margin-bottom: 15px;">
+                        <div class="panel panel-default" style="border: solid 0px; margin: 0px 0px 15px 0px;">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" style="text-decoration: none;">
                                 <div class="panel-heading" style="border: solid 0px; background-color: #00BFA5;">
                                     <h4 class="panel-title">
@@ -519,7 +522,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default" style="border: solid 0px; margin-bottom: 15px;">
+                        <div class="panel panel-default" style="border: solid 0px; margin: 0px 0px 15px 0px;">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" style="text-decoration: none;">
                                 <div class="panel-heading" style="border: solid 0px; background-color: #00BFA5;">
                                     <h4 class="panel-title">
@@ -538,7 +541,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default" style="border: solid 0px; margin-bottom: 15px;">
+                        <div class="panel panel-default" style="border: solid 0px; margin: 0px 0px 15px 0px;">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" style="text-decoration: none;">
                                 <div class="panel-heading" style="border: solid 0px; background-color: #00BFA5;">
                                     <h4 class="panel-title">
@@ -561,16 +564,16 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background: #F5F5F5; min-height: 600px; color: rgba(114,114,114,1.0);" id="connect">
+        <div class="container-fluid" style="background: #F5F5F5; color: rgba(114,114,114,1.0); min-height: 100vh;" id="connect">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <h2 style="text-align: left; padding: 10vh 0vh 00vh 0vh;">Connect</h2>
-                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px; padding-bottom: 10vh;">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <h2 style="text-align: left; padding-top: 10vh;">Connect</h2>
+                    <hr style="margin-left: 0px; max-width: 64px; border-color: #FFD54F; border-width: 2px;">
                 </div>
             </div>
-            <div style="min-height: 20vh;">
+            <div>
                 <div style="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                         <p>If you want to reach out to me, please do. I'm happy to talk, just <a href="mailto:joey.koons@gmail.com?Subject=Joey,%20I%20saw%20your%20site%20and%20wanted%20to%20get%20in%20touch" target="_top">send me an email</a> and I'll get back to you as soon as possible!</p>
                     </div>
                 </div>

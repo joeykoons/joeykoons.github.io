@@ -146,6 +146,13 @@
     .portfolio-cards{
             padding: 0px;
             }
+    .dark-nav{
+        color: white !important;
+        }
+    .tab-size{
+        margin-top: 2px;
+        margin-bottom: 5px;
+        }
     @media (max-width: 767px){
         .panel{
             margin-right: 15px;
@@ -165,6 +172,14 @@
         .media-left{
             display: none;
             }
+        .dark-nav{
+            color: rgba(114,114,114,1.0) !important;
+            }
+        .tab-size{
+            font-size: 14px;
+            padding: 0px;
+            margin: 0px;
+            }
         }
     </style>
       
@@ -175,7 +190,7 @@
       <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     </head>
-    <body style="margin-top: -50px; color: rgba(114,114,114,1.0);">
+    <body style="margin-top: -50px; color: white;">
         <!-- Fixed navbar -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -193,30 +208,30 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#resume">Resume</a>
+                            <a href="#resume" class="dark-nav">Resume</a>
                         </li>
                         <li>
-                            <a href="#portfolio">Portfolio</a>
+                            <a href="#portfolio" class="dark-nav">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#skills">Skills</a>
+                            <a href="#skills" class="dark-nav">Skills</a>
                         </li>
                         <li>
-                            <a href="#connect">Connect</a>
+                            <a href="#connect" class="dark-nav">Connect</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#connect" style="color: rgba(114,114,114,1.0);">LinkedIn</a>
+                            <a href="#connect" class="dark-nav">LinkedIn</a>
                         </li>
                         <li>
-                            <a href="#connect" style="color: rgba(114,114,114,1.0);">Email</a>
+                            <a href="#connect" class="dark-nav">Email</a>
                         </li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-        <div class="container-fluid" style="background: #FAFAFA;">
+        <div class="container-fluid" style="background: #FAFAFA; color: rgba(114,114,114,1.0);">
             <div class="row">
                 <div id="home" class="col-md-8 col-md-offset-2 col-xs-12" style="min-height: 50vh;">
                     <h1 style="display: none;">Joey Koons</h1>
@@ -228,7 +243,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background: #F5F5F5;">
+        <div class="container-fluid" style="background: #F5F5F5; color: rgba(114,114,114,1.0);">
             <div class="row" id="about" style="margin-top: 10vh;">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                     <h2>"Lorem ipsum lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum."</h2>
@@ -237,7 +252,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background: #F5F5F5;">
+        <div class="container-fluid" style="background: #F5F5F5; color: rgba(114,114,114,1.0);">
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                     <h2 style="text-align: left;">Resume</h2>
@@ -249,26 +264,32 @@
                     <ul class="nav nav-pills red">
                         <li class="active">
                             <a href="#A" data-toggle="tab">
-                                Experience
-                                <span class="plus" style="float: right; color: #FFD54F; padding-left: 5px; cursor: pointer;">
-                                    +
-                                </span>
+                                <h3 class="tab-size">
+                                    Experience
+                                    <span class="plus" style="float: right; color: #FFD54F; padding-left: 5px; cursor: pointer;">
+                                        +
+                                    </span>
+                                </h3>
                             </a>
                         </li>
                         <li>
                             <a href="#B" data-toggle="tab">
-                                Education
-                                <span class="plus" style="float: right; color: #FFD54F; padding-left: 5px; cursor: pointer;">
-                                    +
-                                </span>
+                                <h3 class="tab-size">
+                                    Education
+                                    <span class="plus" style="float: right; color: #FFD54F; padding-left: 5px; cursor: pointer;">
+                                        +
+                                    </span>
+                                </h3>
                             </a>
                         </li>
                         <li>
                             <a href="#C" data-toggle="tab">
-                                Volunteering
-                                <span class="plus" style="float: right; color: #FFD54F; padding-left: 5px; cursor: pointer;">
-                                    +
-                                </span>
+                                <h3 class="tab-size">
+                                    Volunteering
+                                    <span class="plus" style="float: right; color: #FFD54F; padding-left: 5px; cursor: pointer;">
+                                        +
+                                    </span>
+                                </h3>
                             </a>
                         </li>
                     </ul>
@@ -469,14 +490,16 @@
                         <div class="panel panel-default" style="border: solid 0px; margin: 0px 0px 15px 0px;">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" style="text-decoration: none;">
                                 <div class="panel-heading" style="border: solid 0px; background-color: #00BFA5;">
-                                    <h4 class="panel-title">
-                                        <span class="skill-title" style="cursor: pointer; text-align: left; color: white;">
-                                            Web Development
-                                        </span>
-                                        <span class="plus" style="float: right; color: #FFD54F; padding-right: 15px; cursor: pointer;">
-                                            +
-                                        </span>
-                                    </h4>
+                                    <div class="panel-title">
+                                        <h3 class="tab-size">
+                                            <span class="skill-title" style="cursor: pointer; text-align: left; color: white;">
+                                                Web Development
+                                            </span>
+                                            <span class="plus" style="float: right; color: #FFD54F; padding-right: 15px; cursor: pointer;">
+                                                +
+                                            </span>
+                                        </h3>
+                                    </div>
                                 </div>
                             </a>
                             <div id="collapseOne" class="panel-collapse collapse in">
@@ -507,14 +530,16 @@
                         <div class="panel panel-default" style="border: solid 0px; margin: 0px 0px 15px 0px;">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" style="text-decoration: none;">
                                 <div class="panel-heading" style="border: solid 0px; background-color: #00BFA5;">
-                                    <h4 class="panel-title">
-                                        <span class="skill-title" style="cursor: pointer; text-align: left; color: white;">
-                                            Traffic Generation
-                                        </span>
-                                        <span class="plus" style="float: right; color: #FFD54F; padding-right: 15px; cursor: pointer;">
-                                            +
-                                        </span>
-                                    </h4>
+                                    <div class="panel-title">
+                                        <h3 class="tab-size">
+                                            <span class="skill-title" style="cursor: pointer; text-align: left; color: white;">
+                                                Traffic Generation
+                                            </span>
+                                            <span class="plus" style="float: right; color: #FFD54F; padding-right: 15px; cursor: pointer;">
+                                                +
+                                            </span>
+                                        </h3>
+                                    </div>
                                 </div>
                             </a>
                             <div id="collapseTwo" class="panel-collapse collapse">
@@ -526,14 +551,16 @@
                         <div class="panel panel-default" style="border: solid 0px; margin: 0px 0px 15px 0px;">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" style="text-decoration: none;">
                                 <div class="panel-heading" style="border: solid 0px; background-color: #00BFA5;">
-                                    <h4 class="panel-title">
-                                        <span class="skill-title" style="cursor: pointer; text-align: left; color: white;">
-                                            Marketing
-                                        </span>
-                                        <span class="plus" style="float: right; color: #FFD54F; padding-right: 15px; cursor: pointer;">
-                                            +
-                                        </span>
-                                    </h4>
+                                    <div class="panel-title">
+                                        <h3 class="tab-size">
+                                            <span class="skill-title" style="cursor: pointer; text-align: left; color: white;">
+                                                Marketing
+                                            </span>
+                                            <span class="plus" style="float: right; color: #FFD54F; padding-right: 15px; cursor: pointer;">
+                                                +
+                                            </span>
+                                        </h3>
+                                    </div>
                                 </div>
                             </a>
                             <div id="collapseThree" class="panel-collapse collapse">
@@ -545,14 +572,16 @@
                         <div class="panel panel-default" style="border: solid 0px; margin: 0px 0px 15px 0px;">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" style="text-decoration: none;">
                                 <div class="panel-heading" style="border: solid 0px; background-color: #00BFA5;">
-                                    <h4 class="panel-title">
-                                        <span class="skill-title" style="cursor: pointer; text-align: left; color: white;">
-                                            CRO
-                                        </span>
-                                        <span class="plus" style="float: right; color: #FFD54F; padding-right: 15px; cursor: pointer;">
-                                            +
-                                        </span>
-                                    </h4>
+                                    <div class="panel-title">
+                                        <h3 class="tab-size">
+                                            <span class="skill-title" style="cursor: pointer; text-align: left; color: white;">
+                                                CRO
+                                            </span>
+                                            <span class="plus" style="float: right; color: #FFD54F; padding-right: 15px; cursor: pointer;">
+                                                +
+                                            </span>
+                                        </h3>
+                                    </div>
                                 </div>
                             </a>
                             <div id="collapseFour" class="panel-collapse collapse">
